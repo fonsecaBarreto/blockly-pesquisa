@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Aplicação destinada ao uso pela maleta Pedagogica"/>
+        <title>Maleta Pedagógica </title>
+        <link rel="stylesheet"  href="./static/style.css"></link>
+        <script defer type='text/javascript' src='./main.js'></script>
+    </head>
+
+    <body>
+        <noscript>Você precisa ativar o JavaScript no seu navegador</noscript>
+
+      
+        <div class="blockly-app">
+
+            {{> layout/header }}
+
+            {{> content/blockly-workspace }}
+        
+            <div id="code-display"> 
+                <code></code>    
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

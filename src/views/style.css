@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+
+.blockly-app{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: bisque;
+}
+
+#blocklyDiv {
+    height: 100%; width: 100%;
+}
+
+#blocklyButton {
+    float: right;
+}
+.blockly-app > div{
+    width: 100%;
+}
+
+/* Header aqui */
+header{
+    grid-column: 2 span;
+    height: 64px;
+    background-color: rgb(87, 11, 34);
+}
+
+@media screen and (max-width: 960px) {
+        
+
+    .blockly-app > div{
+        grid-column: 2 span;
+    }
+
+    .blockly-app {
+        grid-template-rows: auto 2fr 1fr;
+    }
+
+}
